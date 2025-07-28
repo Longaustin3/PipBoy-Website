@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pipboy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="Fallout_4_Pip-Boy_App.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.app.css" />
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav nav-fill">
+                        <li class="nav-item active"><a href="#" class="nav-link">STAT</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">INV</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">DATA</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">MAP</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">RADIO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a href="#status" class="nav-link" data-bs-toggle="tab" role="tab">STATUS</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="#special" class="nav-link" data-bs-toggle="tab" role="tab">SPECIAL</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="#perks" class="nav-link" data-bs-toggle="tab" role="tab">PERKS</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane active" id="status" role="tabpanel">
+                <div class="center-image">
+                    <img src="vb.png" />
+                </div>
+            </div>
+            <div class="tab-pane" id="special" role="tabpanel">SPECIAL</div>
+            <div class="tab-pane" id="perks" role="tabpanel">PERKS</div>
+        </div>
+            
+        <nav class="navbar navbar-expand-lg bg-transparent pip-footer">
+            <div class="container-fluid">
+                <div class="row w-100 text-center align-items-left">
+                    <div class="col-3">
+                        HP 90/90
+                    </div>
+                    <div class="col-6">
+                        LEVEL 1
+                        <div class="level-progress"></div>
+                    </div>
+                    <div class="col-3">
+                        AP 50/50
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/pipboy.app.js"></script>
+    </body>
+</html>
