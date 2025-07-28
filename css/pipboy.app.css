@@ -22,7 +22,7 @@ body::after {
     pointer-events:none;
 }
 
-.navbar {
+#main-nav {
     border-bottom:2px solid;
     margin:0px 10px;
     margin-bottom: 10px;
@@ -30,7 +30,6 @@ body::after {
 
 .navbar .navbar-nav > li.nav-item > .nav-link {
     text-align: center;
-    width: 50%;
     margin: auto;
     z-index: 50;
     position: relative;
@@ -42,13 +41,15 @@ body::after {
 
 .navbar-nav {
     width: 100%;
+    margin: 0px 200px;
 }
 .navbar ul.navbar-nav > li {
     display: block;
     position: relative;
     width: 100%;
+    padding: 0px 6%;
 }
-.navbar::before, .navbar::after {
+#main-nav::before, #main-nav::after {
     height: 7px;
     width: 2px;
     content: "";
@@ -67,7 +68,7 @@ body::after {
     right:0px;
 }
 
-ul > li.nav-item > a.nav-link, ul > li.lavbar-item.active > a.nav-link {
+ul > li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav-link {
     color: #14fe17 !important;
     font-size: 32px;
     line-height: 22px;
@@ -102,4 +103,46 @@ ul > li.nav-item > a.nav-link, ul > li.lavbar-item.active > a.nav-link {
     width: calc(100% - 20px);
     position: fixed;
     margin: 10px;
+}
+
+.nav.nav-tabs {
+    margin: 10px 100px;
+    border-bottom: none;
+}
+
+.nav.nav-tabs > .nav-item > a {
+    background: transparent;
+    border: 1px transparent;
+    font-size: 26px;
+}
+
+.nav.nav-tabs > li:nth-child(2) > a {
+    opacity: .6;
+}
+
+.nav.nav-tabs > li:nth-child(3) > a {
+    opacity: .3;
+}
+
+.level-progress {
+    width: 70%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.level-progress-indicator {
+    height: 7px;
+    background: #14fe17;
+    width: 70%;
+    position: relative;
+}
+
+.navbar.pip-footer .col-3, .navbar.pip-footer .col-6 {
+    background: rgba(16, 255, 0, 0.15);
+}
+
+.navbar.pip-footer .col-6 {
+    margin: 0px 5px;
+    flex: 0 0 49%;
 }
