@@ -78,7 +78,7 @@ ul > li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav-link {
 .nav-item.active::before {
     content: "";
     position: absolute;
-    width: 70%;
+    width: 80%;
     height: 22px;
     top: 18px;
     left: 50%;
